@@ -1,8 +1,7 @@
 #!/bin/sh
-################################################################################
-#      This file is part of Alex@ELEC - http://www.alexelec.in.ua
-#      Copyright (C) 2011-present Alexandr Zuyev (alex@alexelec.in.ua)
-################################################################################
+
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2011-present Alex@ELEC (http://alexelec.in.ua)
 
 ################################################################################
 # Colors
@@ -20,7 +19,7 @@ CURDIR=$PWD
 BASEDIR=`dirname $0`
 PROJECT_PATH=`cd $BASEDIR; pwd`
 VERSION=`cat $PROJECT_PATH/latest`
-ACE_NAME="acestream-aml"
+ACE_NAME="acestream-rpi"
 RELEASE_DIR="Release"
 
 rm -fr $PROJECT_PATH/$RELEASE_DIR
