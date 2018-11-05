@@ -15,7 +15,7 @@
 import os, subprocess
 
 # Disk info
-df = subprocess.Popen(["df", "/"], stdout=subprocess.PIPE)
+df = subprocess.Popen(["df"], stdout=subprocess.PIPE)
 output = df.communicate()[0]
 disk_device, disk_size, disk_used, disk_available, disk_percent, disk_mountpoint = output.split("\n")[1].split()
 # Memory info
@@ -38,7 +38,7 @@ class Android(object):
 
   @staticmethod
   def getDeviceName():
-    return "Amlogic"
+    return "RPi"
 
   @staticmethod
   def getDeviceModel():
@@ -46,7 +46,7 @@ class Android(object):
 
   @staticmethod
   def getDeviceProductName():
-    return "Amlogic"
+    return "RPi"
 
   @staticmethod
   def getDisplayLanguage():
